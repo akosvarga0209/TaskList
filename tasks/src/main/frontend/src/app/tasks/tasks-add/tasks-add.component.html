@@ -1,0 +1,14 @@
+<script src="../task.model.ts"></script>
+<div class="form-group">
+     <form (ngSubmit)="onTaskAdd(f)" #f="ngForm">
+          <input type="text"
+                 class="form-control"
+                 placeholder="Add new task"
+                 [(ngModel)]="addTaskValue"
+                 ngModel
+                 name="name"
+                 id="name"
+                 >
+     </form>
+
+</div>
